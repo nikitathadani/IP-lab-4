@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cleaning Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Cleaning Services</h2>
+            <p>We offer professional cleaning services for your home or office. Our team is dedicated to providing top-notch cleaning solutions tailored to your needs.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <article class="service">
+                <h3>Residential Service</h3>
+                <p>We offer a variety of house cleaning services to keep your home spotless and organized.</p>
+            </article>
+
+            <article class="service">
+                <h3>Commercial Cleaning</h3>
+                <p>Our team provides cleaning services for offices and commercial spaces, ensuring a clean and productive work environment.</p>
+            </article>
+
+            <article class="service">
+                <h3>Deep Cleaning</h3>
+                <p>For those tough cleaning jobs, our deep cleaning service tackles every corner, leaving your space immaculate.</p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Order Cleaning Service</h2>
+            <form id="cleaning-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required><br><br>
+
+                <label for="service">Service Type:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Residential">Residential Service</option>
+                    <option value="Commercial">Commercial Cleaning</option>
+                    <option value="Deep Cleaning">Deep Cleaning</option>
+                </select><br><br>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" maxlength="100"></textarea><br><br>
+
+                <button type="submit">Submit Order</button>
+            </form>
+            <div id="receipt" style="display:none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cleaning Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
